@@ -1,0 +1,426 @@
+@keyframes slideDown {
+    from {
+        transform : translateX(100%);
+    }
+    to {
+        transform : translateX(0px);
+    }
+}
+
+@keyframes effectAnime {
+    from {
+        width : 0px;
+    }
+    to {
+        width : 100%;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin : 0;
+}
+
+nav {
+    background-color: blue;
+    height : 100px;
+    position : relative;
+}
+
+#title {
+    background-color: rgb(255, 0, 0);
+    height : 76%;
+    width  : 100px;
+    padding : 5px;
+    padding-top : 18px;
+    font-size : 50px;
+    float : left;
+}
+
+#nav-options {
+    float : right;
+    background-color: chartreuse;
+    width : 40%;
+    height : 100%;
+}
+
+#nav-options > ul {
+    list-style-type: none;
+    display : flex;
+    justify-content: space-evenly;
+}
+
+#nav-options > ul > li {
+    text-align : center;
+    width : 75%;
+    font-size: 20px;
+    padding : 22px;
+    margin-left : 10px;
+    margin-right : 10px;
+    background-color: black;
+    color : white;
+}
+
+#nav-options > ul > li::after {
+    content : "";
+    background-color: red;
+    width : 0;
+    height  : 3px;
+    display: block;
+}
+
+#nav-options > ul > li::before {
+    content : "";
+    background-color: red;
+    width : 0px;
+    height  : 3.4px;
+    display: block;
+}
+
+#nav-options > ul > li:hover::after, #nav-options > ul > li:hover::before {
+    width : 100%;
+    transition  : 0.5s;
+}
+
+#menu-but {
+    float : right;
+    height : 60%;
+    width : 60px;
+    margin-top : 20px;
+    margin-right : 20px;
+    display :none;
+    background-color: green;
+}
+
+#about {
+    height : 100%;
+}
+
+#about-content {
+    height : 600px;
+    width : 50%;
+    background-color: blueviolet;
+}
+
+#about-image {
+    height : 600px;
+    width : 50%;
+    background-color: burlywood;
+}
+
+#products {
+    background-color: coral;
+    padding : 100px;
+}
+
+#hello1 {
+    width : 150px;
+    height : 40px;
+    background-color: white;
+    text-align : center;
+    padding-top : 20px;
+}
+
+#hello1:hover {
+    transform : scale(1.2) rotateZ(10deg);
+    cursor : pointer;
+    transition : 0.3s;
+    background-color: rgb(0, 0, 0);
+    color : white;
+}
+
+#hello2 {
+    width : 150px;
+    height : 40px;
+    background-color: white;
+    text-align : center;
+    padding-top : 20px;
+}
+
+#hello2:hover {
+    transform : scale(1.2);
+    cursor : pointer;
+    transition : 0.3s;
+    background-color: rgb(0, 0, 0);
+    color:  white;
+}
+
+#hello3 {
+    width : 150px;
+    height : 40px;
+    background-color: white;
+    text-align : center;
+    padding-top : 20px;
+}
+
+#hello3:hover {
+    transform : translateY(-10px);
+    cursor : pointer;
+    transition : 0.3s;
+    background-color: rgb(0, 0, 0);
+    color:  white;
+}
+
+#anime1 {
+    margin-top : 20px;
+    width : 250px;
+}
+
+#anime2 {
+    background-color: aliceblue;
+    text-align : center;
+    height : 25px;
+    padding : 20px;
+}
+
+#anime3 {
+    background-color: blue;
+    transition  : 0.3s;
+    height : 0px;
+}
+
+#anime1:hover #anime3 {
+    height : 200px;
+    transition : 0.3s;
+}
+
+#anime4 {
+    margin-top : 30px;
+    height : 200px;
+    width : 100%;
+    background-color: aliceblue;
+    position : relative;
+}
+
+#anime7 {
+    width : 0px;
+    height : 0px;
+    display  : none;
+    text-align: center;
+}
+
+#anime5 {
+    height : 100%;
+    width : 50%;
+    background-color: black;
+    float:  left;
+}
+
+#anime6 {
+    height : 100%;
+    width : 50%;
+    background-color: black;
+    float : right;
+}
+
+#anime4:hover #anime5{
+    width : 0px;
+    transition : 0.5s;
+}
+
+#anime4:hover #anime6{
+    width : 0px;
+    transition : 0.5s;
+}
+
+#anime4:hover #anime7 {
+    display : block;
+    width : 100%;   
+}
+
+#anime8 {
+    height : 40px;
+    width : 150px;
+    background-color: aliceblue;
+    text-align : center;
+    padding-top : 20px;
+    margin : 5px;
+}
+
+#anime8:hover {
+    transform : scale(1.2);
+    cursor : pointer;
+    transition : 0.3s; 
+}
+
+#anime9 {
+    height : 40px;
+    width : 150px;
+    background-color: aliceblue;
+    text-align : center;
+    padding-top : 20px;
+}
+
+#anime9::after {
+    margin-top : 15px;
+    margin-left : 10px;
+    content : " ";
+    width : 0px;
+    height:  2px;
+    background-color: black;
+    display : block;
+}
+
+#anime9::before {
+    margin-top : -16px;
+    margin-left : 10px;
+    margin-bottom : 15px;
+    content : " ";
+    width : 0px;
+    height:  2px;
+    background-color: black;
+    display : block;
+}
+
+#anime9:hover {
+    cursor : pointer;
+}
+
+#anime9:hover::after {
+    width : 87%;
+    transition : 0.3s;
+}
+
+#anime9:hover::before {
+    width : 87%;
+    transition : 0.3s;
+}
+
+
+#anime10 {
+    height : 40px;
+    width : 150px;
+    background-color: aliceblue;
+    text-align : center;
+    padding-top : 20px;
+    margin : 5px;
+}
+
+#anime10:hover {
+    transform : rotate(360deg);
+    transition : 0.3s;
+    cursor : pointer;
+}
+
+#anime11-box {
+    width : 160px;
+    height : auto;
+    background-color: rgb(0, 0, 0);
+}
+
+#anime11 {
+    height : 20px;
+    width : 150px;
+    background-color: aliceblue;
+    text-align : center;
+    padding-top : 32px;
+    margin : 5px;
+    font-size : 0%;
+}
+
+#anime11:hover {
+    font-size : 100%;
+    width : 150px;
+    height : 51px;  
+    transition : 0.3s;
+    cursor : pointer;
+}
+
+#sub-but1 {
+    width : 150px;
+    height : 60px;
+    border : 5px solid rgb(255, 0, 208);
+    background-color: rgb(0, 0, 0, 0 );
+    border-radius : 10px;
+    font-size: 22px;
+    letter-spacing: 2px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight :900;
+    color : rgb(255, 0, 208);
+}
+
+#sub-but1:hover {
+    background-color: rgb(255, 0, 208);
+    color : white;
+    box-shadow: 0px 0px 10px 10px rgb(255, 59, 235);
+    transition : 100ms;
+    cursor : pointer;
+}
+
+#sub-but2-box {
+    background-color: aliceblue;
+    padding : 5px;  
+}
+
+#sub-but2 {
+    width : 150px;
+    height : 60px;
+    border : none;
+    background-color: aliceblue;
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+
+#sub-but2:hover {
+    border : 5px solid coral;
+    transition : 100ms;
+    cursor: pointer;
+}
+
+#sub-but3 {
+    width : 150px;
+    height : 60px;
+    border : 5px solid white;
+    background-color: rgb(0, 0, 0, 0);
+    border-radius : 30px;
+    font-size : 20px;
+    color: white;
+    font-weight : 700;
+    margin-top : 5px;
+}
+
+#sub-but3:hover {
+/*     color : coral;
+    background-color: white;
+    width : 160px;
+    border-radius : 35px;
+    height : 70px;
+    margin : 0;
+    cursor : pointer;
+    transition : 100ms; */
+    transform : scale(1.1);
+    color : coral;
+    background-color: white;
+    cursor : pointer;
+    transition : 100ms;
+}
+
+#join-us {
+    height : 600px;
+    background-color:darkblue;
+}
+
+#contact {
+    height : 600px;
+    background-color:darkgoldenrod;
+}
+
+@media screen and (max-width : 780px) {
+    body {
+        background-color: aqua;
+    }
+
+    #nav-options {
+        width : 100%;
+        display : none;
+        animation-name: slideDown;
+        animation-duration: 1s;
+    }
+
+    #menu-but {
+        display : block;
+    }
+}

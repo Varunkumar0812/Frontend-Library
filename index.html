@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div id="title">Title</div>
+
+        <button id="menu-but">Menu</button>
+
+        <div id="nav-options">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#join-us">Join Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div id="products">
+        <div style="display : flex; justify-content: center;">
+            <div id="hello1">Confirm</div>
+            <div id="hello1">Submit</div>
+            <div id="hello1">Next</div>
+            <div id="hello1">Finish</div>
+        </div>
+
+        <hr style="margin : 50px;">        
+        
+        <div style="display : flex; justify-content: center;">
+            <div id="hello2">Confirm</div>
+            <div id="hello2">Submit</div>
+            <div id="hello2">Next</div>
+            <div id="hello2">Finish</div>
+        </div>
+
+        <hr style="margin : 50px;">        
+        
+        <div style="display : flex; justify-content: center;">
+            <div id="hello3">Confirm</div>
+            <div id="hello3">Submit</div>
+            <div id="hello3">Next</div>
+            <div id="hello3">Finish</div>
+        </div>
+
+        <hr style="margin : 50px;">
+
+        <div style="display : flex; justify-content: space-evenly;">
+            <div id="anime1">
+                <div id="anime2">Varunkumar R</div>
+                <div id="anime3"></div>
+            </div>
+            <div id="anime1">
+                <div id="anime2">Metta Surrendhar</div>
+                <div id="anime3"></div>
+            </div>
+            <div id="anime1">
+                <div id="anime2">Dinesh Kumar</div>
+                <div id="anime3"></div>
+            </div>
+            <div id="anime1">
+                <div id="anime2">Sree Varshan</div>
+                <div id="anime3"></div>
+            </div>
+        </div>
+
+        <hr style="margin : 50px;">
+
+        <div id="anime4">
+            <div id="anime5">
+
+            </div>
+            <div id="anime7">
+                How can you affect other elements when one element is hovered?
+                To affect other elements when one element is hovered, an element
+                 should be inside another element i.e. parent-child or sibling. On
+                  placing the mouse cursor on one element, the other's property 
+                  should change i.e. the hover affect is then visible.18-Oct-2022
+            </div>
+            <div id="anime6">
+
+            </div>
+        </div>
+
+        <hr style="margin : 50px;">
+
+        <div  style="display : flex; justify-content: space-evenly;">
+            <div>
+                <div id="anime8">Home</div>
+                <div id="anime8">About</div>
+                <div id="anime8">Products</div>
+                <div id="anime8">Contact</div>
+            </div>
+    
+            <div>
+                <div id="anime9">Home</div>
+                <div id="anime9">About</div>
+                <div id="anime9">Products</div>
+                <div id="anime9">Contact</div>
+            </div>
+
+            <div>
+                <div id="anime10">Home</div>
+                <div id="anime10">About</div>
+                <div id="anime10">Products</div>
+                <div id="anime10">Contact</div>
+            </div>
+
+            <div style="display : flex;">
+                <div id="anime11-box">
+                    <div id="anime11">Home</div>
+                    <div id="anime11">About</div>
+                    <div id="anime11">Products</div>
+                    <div id="anime11">Contact</div>
+                </div>
+            </div>
+        </div>
+
+        <hr style="margin : 50px;">
+
+        <div style="display : flex; justify-content: space-evenly;">
+            <button id="sub-but1">Submit</button>
+            <div id="sub-but2-box">
+                <button id="sub-but2">Submit</button>
+            </div>
+            <button id="sub-but3">Submit</button>
+        </div>
+
+    </div>
+
+    <div id="join-us">
+
+    </div>
+
+    <div id="contact">
+
+    </div>
+
+    <script>
+        const menu_options = document.getElementById("nav-options");
+        const menu_but = document.getElementById("menu-but");
+        menu_but.onclick = function() {
+            if(menu_options.style.display !== 'none') {
+                menu_options.style.display = 'none';
+            }
+            else {
+                menu_options.style.display = 'block';
+            }
+        }
+    </script>
+
+</body>
+</html>
